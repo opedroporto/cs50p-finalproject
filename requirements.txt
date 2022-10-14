@@ -1,0 +1,4 @@
+selenium
+pytube
+Pillow
+moviepy
