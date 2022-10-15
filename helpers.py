@@ -1,6 +1,8 @@
+from PIL import Image
+
 def resize(image_pil, width, height):
     '''
-    Resize PIL image keeping aspect ratio and using white background.
+    Resize PIL image by given width and height.
     '''
     ratio_w = width / image_pil.width
     ratio_h = height / image_pil.height
