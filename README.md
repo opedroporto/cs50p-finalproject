@@ -42,7 +42,7 @@ once it has all these informations, it generates a **video** object with the **g
  - **generateVideo()**: as mentioned above, this function is used to create a video, and it does it by receiving the video specifications as arguments, passing these arguments to initiate a object from **Video class**, printing the object as a string and finally calling the method **generate()** of the video object. This function returns the video object itself.
 
 The **test_project.py** file is responsible for testing the 3 functions of "project.py" (verifyArgv, formatToAscii, generateVideo) with the following functions:<br>
- - **test_verifyArgv()**: ensures that **verifyArgv()** verifies correctly the amount of command-line arguments and returns the filename as expected. In other words, make sure the script's usage works just as follows:
+ - **test_verifyArgv()**: ensures that **verifyArgv()** verifies correctly the amount of command-line arguments and returns the filename as expected. In other words, make sure the script's usage works just as follows:<br>
 ![example2](https://user-images.githubusercontent.com/77935889/195926287-01e40023-9251-4fd3-b284-71014b2ac2ab.png)
  - **test_formatToAscii()**: ensures that **formatToAscii()** filters the string based on the first 255 ASCII only independent from where the characters are located in the string.
  - **test_generateVideo()**: ensures that **generateVideo()** in fact creates a mp4 video in the root of the project and ensures the video is created with the specified **videoName** preceded by ".mp4". It is done by generating test videos and excluding them right after.
